@@ -1,0 +1,233 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Mar 28 13:48:59 2023
+# Process ID: 11844
+# Current directory: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10380 D:\Academic\02. Computer Organization and Digital Design\Lab Work\Lab_4\Lab_4.xpr
+# Log file: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/vivado.log
+# Journal file: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project {D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.2/data/ip'.oopen_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 855.332 ; gain = 104.781uupdate_compile_order -fileset sources_1update_files -from_files {{D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc}} -to_files {{D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3LabsFA.xdc}} -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3LabsFA.xdc' with file 'D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc'.
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Tue Mar 28 13:58:27 2023] Launched synth_1...
+Run output will be captured here: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Tue Mar 28 14:13:19 2023] Launched impl_1...
+Run output will be captured here: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1710.977 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1710.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1806.680 ; gain = 906.387
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Mux_8_to_1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1892.688 ; gain = 77.859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Mux_8_to_1' [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.srcs/sources_1/new/Mux_8_to_1.vhd:41]
+INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.srcs/sources_1/new/Decoder_3_to_8.vhd:34' bound to instance 'Decoder_3_to_8_1' of component 'Decoder_3_to_8' [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.srcs/sources_1/new/Mux_8_to_1.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'Decoder_3_to_8' [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.srcs/sources_1/new/Decoder_3_to_8.vhd:40]
+INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.srcs/sources_1/new/Decoder_2_to_4.vhd:34' bound to instance 'Decode_2_to_4_0' of component 'Decoder_2_to_4' [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.srcs/sources_1/new/Decoder_3_to_8.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'Decoder_2_to_4' [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.srcs/sources_1/new/Decoder_2_to_4.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_2_to_4' (1#1) [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.srcs/sources_1/new/Decoder_2_to_4.vhd:40]
+INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.srcs/sources_1/new/Decoder_2_to_4.vhd:34' bound to instance 'Decode_2_to_4_1' of component 'Decoder_2_to_4' [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.srcs/sources_1/new/Decoder_3_to_8.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_3_to_8' (2#1) [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.srcs/sources_1/new/Decoder_3_to_8.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Mux_8_to_1' (3#1) [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.srcs/sources_1/new/Mux_8_to_1.vhd:41]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1933.387 ; gain = 118.559
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1933.387 ; gain = 118.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1933.387 ; gain = 118.559
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc]
+WARNING: [Vivado 12-584] No ports matched 'I(0'. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I(0)'. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I(1)'. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I(1)'. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Y(0)'. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Y(0)'. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Y(1)'. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Y(1)'. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Y(2)'. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Y(2)'. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Y(3)'. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Y(3)'. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2030.480 ; gain = 215.652
+12 Infos, 12 Warnings, 12 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2030.480 ; gain = 215.652
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Tue Mar 28 14:23:04 2023] Launched synth_1...
+Run output will be captured here: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Tue Mar 28 14:25:17 2023] Launched impl_1...
+Run output will be captured here: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.runs/impl_1/runme.log
+current_design impl_1
+refresh_design
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2056.559 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2056.559 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Tue Mar 28 14:27:10 2023] Launched synth_1...
+Run output will be captured here: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Tue Mar 28 14:27:45 2023] Launched impl_1...
+Run output will be captured here: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2056.559 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2056.559 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Tue Mar 28 14:32:58 2023] Launched synth_1...
+Run output will be captured here: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Tue Mar 28 14:33:36 2023] Launched impl_1...
+Run output will be captured here: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 2063.113 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 2063.113 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Tue Mar 28 14:39:33 2023] Launched synth_1...
+Run output will be captured here: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Tue Mar 28 14:40:09 2023] Launched impl_1...
+Run output will be captured here: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2072.809 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2072.809 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2072.809 ; gain = 8.203
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Mar 28 14:41:28 2023] Launched impl_1...
+Run output will be captured here: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 28 14:48:22 2023...

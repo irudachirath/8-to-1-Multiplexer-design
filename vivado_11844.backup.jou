@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Mar 28 13:48:59 2023
+# Process ID: 11844
+# Current directory: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10380 D:\Academic\02. Computer Organization and Digital Design\Lab Work\Lab_4\Lab_4.xpr
+# Log file: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/vivado.log
+# Journal file: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project {D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.xpr}uupdate_compile_order -fileset sources_1update_files -from_files {{D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3Labs_Mux_8_1.xdc}} -to_files {{D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Basys3LabsFA.xdc}} -filesets [get_filesets *]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1

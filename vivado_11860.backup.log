@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Mar 24 16:33:11 2023
+# Process ID: 11860
+# Current directory: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10888 D:\Academic\02. Computer Organization and Digital Design\Lab Work\Lab_4\Lab_4.xpr
+# Log file: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/vivado.log
+# Journal file: D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4/Lab_4.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 844.895 ; gain = 111.363
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 24 22:21:25 2023...

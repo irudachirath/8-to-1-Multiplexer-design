@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Mar 29 23:44:35 2023
+# Process ID: 11768
+# Current directory: D:/My Projects/8_to_Multiplexer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19664 D:\My Projects\8_to_Multiplexer\Lab_4.xpr
+# Log file: D:/My Projects/8_to_Multiplexer/vivado.log
+# Journal file: D:/My Projects/8_to_Multiplexer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/My Projects/8_to_Multiplexer/Lab_4.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/Academic/02. Computer Organization and Digital Design/Lab Work/Lab_4' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 905.141 ; gain = 158.219
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed Mar 29 23:45:08 2023] Launched synth_1...
+Run output will be captured here: D:/My Projects/8_to_Multiplexer/Lab_4.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Mar 29 23:45:50 2023] Launched impl_1...
+Run output will be captured here: D:/My Projects/8_to_Multiplexer/Lab_4.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1704.098 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1704.098 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1843.570 ; gain = 913.633
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 29 23:47:20 2023...
